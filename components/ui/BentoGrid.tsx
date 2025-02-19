@@ -93,6 +93,7 @@ export const BentoGridItem = ({
                 <div className="w-full h-full absolute">
                     {img && (
                         <Image
+                            loading="lazy"
                             width={300}
                             height={300}
                             src={img}
@@ -107,6 +108,7 @@ export const BentoGridItem = ({
                 >
                     {spareImg && (
                         <Image
+                        loading="lazy"
                             width={300}
                             height={300}
                             src={spareImg}
@@ -183,7 +185,7 @@ export const BentoGridItem = ({
                                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                                     }`}
                             >
-                                <Image width={100} height={100} src="/confetti.gif" alt="confetti" />
+                                <Image loading="lazy" width={100} height={100} src="/confetti.gif" alt="confetti" />
                                 <Lottie options={defaultOptions} height={200} width={400} />
                             </div>
 

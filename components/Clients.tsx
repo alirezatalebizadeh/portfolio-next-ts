@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { lazy } from 'react'
 import { InfiniteMovingCards } from './ui/infiniteMovingCards'
 import { companies, testimonials } from '@/data'
 import Image from 'next/image'
@@ -25,12 +25,14 @@ const Clients = () => {
                                 <Image src={img} alt={name}
                                     width={50}
                                     height={20}
+                                    loading="lazy"
                                     className='md:w-10 '
                                 />
                                 <Image src={nameImg} alt={name}
                                     width={80}
                                     height={80}
                                     className='md:w-24 '
+                                    loading="lazy"
                                 />
                             </div>
                         ))}
