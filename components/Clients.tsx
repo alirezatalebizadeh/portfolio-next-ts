@@ -1,5 +1,5 @@
 "use client"
-import React, { lazy } from 'react'
+import React from 'react'
 import { InfiniteMovingCards } from './ui/infiniteMovingCards'
 import { companies, testimonials } from '@/data'
 import Image from 'next/image'
