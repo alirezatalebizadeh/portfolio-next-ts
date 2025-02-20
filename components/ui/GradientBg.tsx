@@ -40,7 +40,7 @@ export const BackgroundGradientAnimation = ({
     const [tgX, setTgX] = useState(0);
     const [tgY, setTgY] = useState(0);
     useEffect(() => {
-        if (typeof window !== "undefined") { // بررسی اجرای فقط در کلاینت
+        if (typeof window !== "undefined") { 
             document.body.style.setProperty("--gradient-background-start", gradientBackgroundStart);
             document.body.style.setProperty("--gradient-background-end", gradientBackgroundEnd);
             document.body.style.setProperty("--first-color", firstColor);
